@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+.background{
+  width:400px;
+  min-height: 100%;
+  margin: auto;
+  box-shadow: 0px 8px 70px -10px rgba(13,28,39,0.6);
+  background: #fff;
+  border-radius: 12px;
+  max-width: 700px;
+  position: relative;
+}
+.profile-img{
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0px 5px 50px 0px rgb(108, 68, 252), 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name-title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: -3rem;
+}
+.text {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  margin: 3rem auto 0; 
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  }
+  .typewriter {
+  animation: anime 4s steps(40) 1s 1 normal both,
+  anime2 500ms steps(40) infinite normal;
+  }
+  @keyframes anime {
+  from {width: 0%;}
+  to {width: 85%;}
+  }
+  @keyframes anime2 {
+  from {border-right-color: rgba(0, 0, 0, 0.75);}
+  to {border-right-color: transparent;}
+  }
+
+.text-location{
+  display: flex;
+  justify-content: center;
+  margin:2rem;
+
+}
+span.location{
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover{
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .codepen:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
